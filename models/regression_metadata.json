@@ -1,0 +1,71 @@
+{
+    "model_type": "Regression",
+    "champion_model": "XGBoost_Regressor",
+    "metrics": {
+        "rmse": 3.262354000914805,
+        "mae": 2.4851080139718014,
+        "r2_score": 0.9997732705211765,
+        "mape": 0.009961571729592384
+    },
+    "all_model_results": {
+        "Ridge_Regression": {
+            "rmse": 11.611170682702076,
+            "mae": 8.522301040451865,
+            "r2_score": 0.9971279113666783,
+            "mape": 0.05590035288066951
+        },
+        "Random_Forest_Regressor": {
+            "rmse": 12.687212862819436,
+            "mae": 9.326326711130811,
+            "r2_score": 0.9965709148251362,
+            "mape": 0.02521092176574512
+        },
+        "XGBoost_Regressor": {
+            "rmse": 3.262354000914805,
+            "mae": 2.4851080139718014,
+            "r2_score": 0.9997732705211765,
+            "mape": 0.009961571729592384
+        }
+    },
+    "features": {
+        "numeric": [
+            "BHK",
+            "Size_in_SqFt",
+            "Price_in_Lakhs",
+            "Price_per_SqFt_INR",
+            "Year_Built",
+            "Floor_No",
+            "Total_Floors",
+            "Age_of_Property",
+            "Nearby_Schools",
+            "Nearby_Hospitals",
+            "Amenity_Count",
+            "Total_Infra_Count",
+            "School_Density_Score",
+            "Hospital_Density_Score",
+            "Space_Per_BHK",
+            "Floor_Ratio",
+            "Is_Top_Floor",
+            "Is_Ground_Floor",
+            "Has_Gym",
+            "Has_Playground",
+            "Has_Garden",
+            "Has_Clubhouse",
+            "Has_Pool"
+        ],
+        "categorical": [
+            "State",
+            "City",
+            "Property_Type",
+            "Furnished_Status",
+            "Public_Transport_Accessibility",
+            "Parking_Space",
+            "Security",
+            "Facing",
+            "Owner_Type",
+            "Availability_Status",
+            "Age_Category"
+        ]
+    },
+    "target": "Future_Price_5Y_Dynamic"
+}

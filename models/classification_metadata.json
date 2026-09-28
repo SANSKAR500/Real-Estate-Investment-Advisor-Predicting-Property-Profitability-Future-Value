@@ -1,0 +1,75 @@
+{
+    "model_type": "Classification",
+    "champion_model": "XGBoost_Classifier",
+    "metrics": {
+        "accuracy": 0.97362,
+        "precision": 0.9705950273266107,
+        "recall": 0.9784658363403562,
+        "f1_score": 0.974514539658004,
+        "roc_auc": 0.9972408933660355
+    },
+    "all_model_results": {
+        "Logistic_Regression": {
+            "accuracy": 0.89656,
+            "precision": 0.9011879259980525,
+            "recall": 0.8977612229852947,
+            "f1_score": 0.8994713108381278,
+            "roc_auc": 0.963020452236487
+        },
+        "Random_Forest_Classifier": {
+            "accuracy": 0.93714,
+            "precision": 0.9312447595091089,
+            "recall": 0.9480464051526791,
+            "f1_score": 0.9395704754763415,
+            "roc_auc": 0.9889635942840463
+        },
+        "XGBoost_Classifier": {
+            "accuracy": 0.97362,
+            "precision": 0.9705950273266107,
+            "recall": 0.9784658363403562,
+            "f1_score": 0.974514539658004,
+            "roc_auc": 0.9972408933660355
+        }
+    },
+    "features": {
+        "numeric": [
+            "BHK",
+            "Size_in_SqFt",
+            "Price_in_Lakhs",
+            "Price_per_SqFt_INR",
+            "Year_Built",
+            "Floor_No",
+            "Total_Floors",
+            "Age_of_Property",
+            "Nearby_Schools",
+            "Nearby_Hospitals",
+            "Amenity_Count",
+            "Total_Infra_Count",
+            "School_Density_Score",
+            "Hospital_Density_Score",
+            "Space_Per_BHK",
+            "Floor_Ratio",
+            "Is_Top_Floor",
+            "Is_Ground_Floor",
+            "Has_Gym",
+            "Has_Playground",
+            "Has_Garden",
+            "Has_Clubhouse",
+            "Has_Pool"
+        ],
+        "categorical": [
+            "State",
+            "City",
+            "Property_Type",
+            "Furnished_Status",
+            "Public_Transport_Accessibility",
+            "Parking_Space",
+            "Security",
+            "Facing",
+            "Owner_Type",
+            "Availability_Status",
+            "Age_Category"
+        ]
+    },
+    "target": "Good_Investment"
+}
